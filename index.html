@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATG WORLD</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Sign In Overlay -->
+    <div class="overlay">
+      <img src="./assets/canceliconimg.jpg" alt="cancel" class="cancel" />
+      <div class="signin">
+        <img src="./assets/cross.png" alt="cancel" class="cancel" />
+        <div class="container">
+          <p class="message">
+            Let's learn, share & inspire each other with our passion for
+            computer engineering. Sign up now 🤘🏼
+          </p>
+          <div class="content">
+            <div class="left-container">
+              <form>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+                <div class="password-container">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />
+                  <img src="./assets/eye.jpg" alt="eye" class="eye-icon" />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Sign In
+                </button>
+              </form>
+              <button class="btn-secondary btn-block social-btn signInWith">
+                <img src="./assets/facebook.png" alt="facebook" /> Sign In with
+                Facebook
+              </button>
+              <button class="btn-secondary btn-block social-btn signInWith">
+                <img src="./assets/google.png" alt="google" /> Sign In with
+                Google
+              </button>
+            </div>
+            <div class="right-container">
+              <p>Don't have an account? <span>Create new for free!</span></p>
+              <img src="./assets/SignInimg.svg" alt="signIn img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Page -->
+    <div class="mainPage">
+      <nav class="navbar">
+        <div class="container">
+          <a href="#">
+            <img src="./assets/logo.svg" alt="ATG.WORLD" class="logo" />
+          </a>
+          <form class="search-form">
+            <div class="search-box">
+              <img src="./assets/search-icon.svg" alt="search" />
+              <input
+                type="search"
+                placeholder="Search for your favorite group in ATG"
+              />
+            </div>
+          </form>
+          <div class="account">
+            <a href="#">Create account. <span>It's free!</span></a>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <img src="./assets/computerEngineering.png" alt="img not found" />
+      <div class="heroContent ">
+        <div class="joingroup">
+          <img src="./assets/arrow.png" alt="arrow" class="arrow-icon" />
+          <button type="submit" class="joinbtn">Join Group</button>
+        </div>
+        <div class="computerEng">
+          <h2>Computer Engineering</h2>
+          <p>142,765 Computer Engineers follow this</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post Section -->
+    <div class="post">
+        <div class="heading">
+            <ul class="post-nav">
+              <li class="post-tab active" data-target="all-posts">All Posts(32)</li>
+              <li class="post-tab" id="action" data-target="action">Action</li>
+              <li class="post-tab" data-target="event">Event</li>
+              <li class="post-tab" data-target="education">Education</li>
+              <li class="post-tab" data-target="job">Job</li>
+              <div class="post-controls">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle postbtn"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Write Post
+                  </button>
+                </div>
+                <div class="dropdown">
+                  <button
+                    id="filterbtn"
+                    class="btn btn-secondary dropdown-toggle postbtn"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <b>Filter: All</b>
+                  </button>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block join-group-btn"
+                >
+                  <img src="./assets/groupPeople.png" alt="" /> Join Group
+                </button>
+              </div>
+            </ul>
+            <hr />
+          </div>
+          
+
+      <!-- Post Article -->
+      <div class="postContainer">
+        <div class="postcontent">
+          <div class="postLeftContainer">
+            <img
+              src="./assets/Forestimg.jpg"
+              alt="ForestImg"
+              class="postImage"
+            />
+            <div class="postContent">
+              <p class="postType">✍️ Article</p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <b class="postTitle"
+                  >What if famous brands had regular fonts? Meet
+                  RegulaBrands!</b
+                >
+                <img
+                  src="./assets/threeDot.png"
+                  alt="options"
+                  class="optionsIcon"
+                />
+              </div>
+              <p class="postDescription">
+                I’ve worked in UX for the better part of a decade. From now on,
+                I plan to rei…
+              </p>
+              <div class="cardButton">
+                <div style="display: flex; align-items: center">
+                  <img
+                    src="./assets/sarthakKumarImg.svg"
+                    alt="Sarthak Kamra"
+                    class="authorImage"
+                  />
+                  <b>Sarthak Kamra</b>
+                </div>
+                <div class="views">
+                  <p><img src="./assets/eye.jpg" alt="views" /> 1.4k views</p>
+                  <img src="./assets/share.png" alt="share" class="share-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="postLeftContainer">
+            <img
+              src="./assets/Education.png"
+              alt="ForestImg"
+              class="postImage"
+            />
+            <div class="postContent">
+              <p class="postType">🔬 Education</p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <b class="postTitle"
+                  >Tax Benefits for Investment under National Pension Scheme
+                  launched by Government</b
+                >
+                <img
+                  src="./assets/threeDot.png"
+                  alt="options"
+                  class="optionsIcon"
+                />
+              </div>
+              <p class="postDescription">
+                I’ve worked in UX for the better part of a decade. From now on,
+                I plan to rei…
+              </p>
+              <div class="cardButton">
+                <div style="display: flex; align-items: center">
+                  <img
+                    src="./assets/sarahWest.png"
+                    alt="Sarthak Kamra"
+                    class="authorImage"
+                  />
+                  <b>Sara West</b>
+                </div>
+                <div class="views">
+                  <p><img src="./assets/eye.jpg" alt="views" /> 1.4k views</p>
+                  <img src="./assets/share.png" alt="share" class="share-img"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="postLeftContainer">
+            <img src="./assets/car.svg" alt="ForestImg" class="postImage" />
+            <div class="postContent">
+              <p class="postType">📆 Meetup</p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  position: relative;
+                "
+              >
+                <b class="postTitle"
+                  >Finance & Investment Elite Social Mixer @Lujiazui</b
+                >
+                <img
+                  src="./assets/threeDot.png"
+                  alt="options"
+                  class="optionsIcon"
+                  id="optionIcons"
+                  onclick="toggleDropdown(this)"
+                />
+                <div class="dropdown-content">
+                  <p onclick="selectOption('Edit')">Edit</p>
+                  <p onclick="selectOption('Report')">Report</p>
+                  <p onclick="selectOption('Option 3')">Option 3</p>
+                </div>
+              </div>
+              <div class="dateandaddress">
+                <img
+                  src="./assets/calender.png"
+                  alt="calendar"
+                  class="calendarIcon"
+                />
+                <b>Fri, 12 Oct, 2018</b>
+                <img
+                  src="./assets/location.png"
+                  alt="location"
+                  class="locationIcon"
+                />
+                <b>Ahmedabad, India</b>
+              </div>
+              <button type="button" class="visitWebsitebtn">
+                <b>Visit Website</b>
+              </button>
+              <div class="cardButton">
+                <div style="display: flex; align-items: center">
+                  <img
+                    src="./assets/RonalJones.png"
+                    alt="Sarthak Kamra"
+                    class="authorImage"
+                  />
+                  <b>Ronal Jones</b>
+                </div>
+                <div class="views">
+                  <p><img src="./assets/eye.jpg" alt="views" /> 1.4k views</p>
+                  <img src="./assets/share.png" alt="share" class="share-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="postLeftContainer">
+            <div class="postContent">
+              <p class="postType">💼 Job</p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <b class="postTitle">Software Developer</b>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                  "
+                >
+                  <img
+                    src="./assets/threeDot.png"
+                    alt="options"
+                    class="optionsIcon"
+                    id="optionIcons"
+                    onclick="toggleDropdown(this)"
+                  />
+                  <div class="dropdown-content">
+                    <p onclick="selectOption('Edit')">Edit</p>
+                    <p onclick="selectOption('Report')">Report</p>
+                    <p onclick="selectOption('Option 3')">Option 3</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dateandaddress">
+                <img
+                  src="./assets/work.png"
+                  alt="calendar"
+                  class="calendarIcon"
+                />
+                <b>Fri, 12 Oct, 2018</b>
+                <img
+                  src="./assets/location.png"
+                  alt="location"
+                  class="locationIcon"
+                />
+                <b>Ahmedabad, India</b>
+              </div>
+              <button type="button" class="applytimejobs">
+                <b>Apply on Timejobs</b>
+              </button>
+              <div class="cardButton">
+                <div style="display: flex; align-items: center">
+                  <img
+                    src="./assets/sarthakKumarImg.svg"
+                    alt="Sarthak Kamra"
+                    class="authorImage"
+                  />
+                  <b>Sarthak Kamra</b>
+                </div>
+                <div class="views">
+                  <p><img src="./assets/eye.jpg" alt="views" /> 1.4k views</p>
+                  <img src="./assets/share.png" alt="share" class="share-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightContainer">
+          <p>
+            <img src="./assets/location.png" alt="location icon" /> Noida, India
+            <img src="./assets/edit.png" alt="edit pen" class="edit" />
+          </p>
+          <hr />
+          <div class="errorMessage">
+            <img src="./assets/error.png" alt="error icon" />
+            <p>
+              Your location will help us serve better and extend a personalised
+              experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-----MOBILE SIGNIN PAGE-->
+<div class="mobilesignIn">
+    <div class="container">
+        <img src="./assets/canceliconimg.jpg" alt="cancel">
+      <h2>Sign In</h2>
+      <form>
+        <div class="firstandlast">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="text"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="text"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Email"
+          />
+        </div>
+      
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary createaccountbtn"
+          disabled
+        >
+          Create Account
+        </button>
+        <button class="btn-secondary btn-block social-btn signInWith">
+          <img src="./assets/facebook.png" alt="facebook" /> Sign In with
+          Facebook
+        </button>
+        <button class="btn-secondary btn-block social-btn signInWith">
+          <img src="./assets/google.png" alt="google" /> Sign In with Google
+        </button>
+      </form>
+
+</div>
+</div>
+
+
+    <img src="./assets/circleedit.svg" alt="Edit Icon" class="edit-icon" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
